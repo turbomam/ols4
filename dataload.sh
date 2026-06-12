@@ -68,7 +68,7 @@ fi
 
 docker run \
   $USER_OPT \
-  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v "${OLS_DOCKER_SOCK:-/var/run/docker.sock}":/var/run/docker.sock \
   -v "$OLS_HOME":"$OLS_HOME" \
   -v "$OLS_EMBEDDINGS_PATH":"$OLS_EMBEDDINGS_PATH" \
   -e OLS_HOME="$OLS_HOME" \
