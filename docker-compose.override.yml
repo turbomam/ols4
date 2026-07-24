@@ -1,0 +1,6 @@
+# Local-only: point OLS4 backend semantic search at the ollama-bge-m3 shim (local-embeddings/).
+# Not committed to the fork branch by default; see local-embeddings/LIVE_SEARCH_TODO.md.
+services:
+  ols4-backend:
+    environment:
+      - OLS_EMBEDDING_SERVICE_URL=http://host.docker.internal:11435
