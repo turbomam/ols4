@@ -1,5 +1,6 @@
 # Local-only: point OLS4 backend semantic search at the ollama-bge-m3 shim (local-embeddings/).
-# Not committed to the fork branch by default; see local-embeddings/LIVE_SEARCH_TODO.md.
+# Committed with the branch; only takes effect when you run the shim + stack locally.
+# See local-embeddings/LIVE_SEARCH_TODO.md.
 services:
   ols4-backend:
     environment:
