@@ -30,6 +30,7 @@ public class OlsSearchQuery {
     List<SearchFilter> filters = new ArrayList<>();
     List<SearchFilter> excludeFilters = new ArrayList<>();
     List<String> facetFields = new ArrayList<>();
+    List<String> searchFields = null;
 
     enum ColumnType { TEXT, BOOLEAN, TEXT_ARRAY }
 
@@ -93,6 +94,10 @@ public class OlsSearchQuery {
         this.facetFields.add(propertyName);
     }
 
+    public void setSearchFields(Collection<String> fields) {
+        this.searchFields = (fields != null && !fields.isEmpty()) ? new ArrayList<>(fields) : null;
+    }
+
     /**
      * Resolve an OLS field name to a PostgreSQL column name.
      * Handles known fields via COLUMN_MAP and dynamic filter properties
@@ -133,7 +138,11 @@ public class OlsSearchQuery {
         Condition condition = DSL.trueCondition();
 
         if (searchText != null && !searchText.isBlank()) {
-            condition = condition.and(matchesTsQuery(field(qualifier, "ts_search", Object.class), buildTsQuery()));
+            if (exactMatch && searchFields != null && !searchFields.isEmpty()) {
+                condition = condition.and(buildExactFieldCondition(qualifier, availableFilterColumns));
+            } else {
+                condition = condition.and(matchesTsQuery(field(qualifier, "ts_search", Object.class), buildTsQuery()));
+            }
         }
 
         for (SearchFilter f : filters) {
@@ -141,6 +150,7 @@ public class OlsSearchQuery {
                 continue;
             }
             if (!isFilterAvailable(availableFilterColumns, f.field)) {
+                condition = condition.and(DSL.falseCondition());
                 continue;
             }
             condition = condition.and(buildFilterCondition(qualifier, f, false));
@@ -175,6 +185,45 @@ public class OlsSearchQuery {
             return List.of(rank.desc(), field(qualifier, "id", String.class).asc());
         }
         return List.of(field(qualifier, "id", String.class).asc());
+    }
+
+    /**
+     * For exact-match queries with explicit searchFields, restrict the match to those specific
+     * indexed columns.
+     *
+     * Checks known columns (COLUMN_MAP) first, then dynamically-indexed filter_ columns so that
+     * ontology property URIs work when the property has been declared as filterProperty in the
+     * ontology config (e.g. owl:versionInfo, TAXRANK_1000000).
+     *
+     * If none of the requested searchFields resolve to an indexed column, returns falseCondition
+     * (zero results) rather than falling back to ts_search. Falling back to ts_search would give
+     * results from completely unrelated fields, which is misleading — the caller explicitly asked
+     * for a specific field and should get zero results if that field is not indexed.
+     *
+     * Array columns use GIN @> containment for fast bitmap index scans.
+     * Scalar columns use lower()=lower() for case-insensitive equality.
+     */
+    private Condition buildExactFieldCondition(String qualifier, Set<String> availableFilterColumns) {
+        String lowerSearch = searchText.toLowerCase(Locale.ROOT);
+        Condition anyField = DSL.falseCondition();
+        for (String qf : searchFields) {
+            boolean knownCol = COLUMN_MAP.containsKey(qf);
+            String col;
+            try {
+                col = resolveColumn(qf);
+            } catch (IllegalArgumentException e) {
+                continue;
+            }
+            boolean filterCol = !knownCol && availableFilterColumns != null && availableFilterColumns.contains(col);
+            if (!knownCol && !filterCol) continue;
+            ColumnType ct = knownCol ? resolveColumnType(qf) : ColumnType.TEXT_ARRAY;
+            if (ct == ColumnType.TEXT_ARRAY) {
+                anyField = anyField.or(arrayContains(field(qualifier, col, String[].class), searchText));
+            } else {
+                anyField = anyField.or(DSL.lower(field(qualifier, col, String.class)).eq(lowerSearch));
+            }
+        }
+        return anyField;
     }
 
     /**

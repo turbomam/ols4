@@ -190,6 +190,15 @@ def upload_artifacts(artifacts_path: Path, sections: dict) -> None:
     else:
         print("  text_tagger_db.bin.gz not found, skipping")
 
+    # Grant read access on the large object so the API can fetch it
+    run_psql(
+        "DO $$ DECLARE v OID; BEGIN "
+        "SELECT tagger_db_oid INTO v FROM ols_text_tagger; "
+        "EXECUTE 'GRANT SELECT ON LARGE OBJECT ' || v || ' TO PUBLIC'; "
+        "END $$;\n",
+        "text_tagger grant"
+    )
+
 
 # ---------------------------------------------------------------------------
 # Main
@@ -322,9 +331,13 @@ def main():
         set_prefix += f"SET max_parallel_maintenance_workers = {parallel_workers};\n"
         print(f"  Setting max_parallel_maintenance_workers={parallel_workers} per session")
 
+    def strip_leading_comments(stmt: str) -> str:
+        lines = [l for l in stmt.splitlines() if not l.strip().startswith("--")]
+        return "\n".join(lines).strip()
+
     index_stmts = [
-        stmt.strip() for stmt in sections["indexes"].split(";")
-        if stmt.strip() and not stmt.strip().startswith("--")
+        s for s in (strip_leading_comments(stmt) for stmt in sections["indexes"].split(";"))
+        if s
     ]
     total = len(index_stmts)
     for idx_i, stmt in enumerate(index_stmts, 1):
