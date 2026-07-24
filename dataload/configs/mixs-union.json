@@ -1,0 +1,41 @@
+{
+  "ontologies": [
+    {
+      "id": "mixs",
+      "preferredPrefix": "MIXS",
+      "title": "GSC MIxS: Minimum Information about any (x) Sequence",
+      "creator": [
+        "Genomic Standards Consortium (GSC)"
+      ],
+      "homepage": "https://genomicsstandardsconsortium.github.io/mixs/",
+      "mailing_list": "gensc-cig@googlegroups.com",
+      "repository": "https://github.com/GenomicsStandardsConsortium/mixs",
+      "tracker": "https://github.com/GenomicsStandardsConsortium/mixs/issues",
+      "uri": "https://w3id.org/mixs",
+      "base_uri": [
+        "https://w3id.org/mixs/"
+      ],
+      "ontology_purl": "file:///Users/mam/gitrepos/ols4-mixs/mixs_union.owl.ttl",
+      "label_property": [
+        "http://purl.org/dc/terms/title"
+      ],
+      "definition_property": [
+        "http://www.w3.org/2004/02/skos/core#definition"
+      ],
+      "synonym_property": [
+        "http://www.w3.org/2004/02/skos/core#altLabel",
+        "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+        "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"
+      ],
+      "preferred_root_term": [
+        "https://w3id.org/mixs/Checklist",
+        "https://w3id.org/mixs/Extension",
+        "https://w3id.org/linkml/EnumDefinition",
+        "https://w3id.org/linkml/PermissibleValue"
+      ],
+      "reasoner": "OWL2",
+      "oboSlims": false,
+      "is_foundary": false
+    }
+  ]
+}
