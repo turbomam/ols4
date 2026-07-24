@@ -1,0 +1,163 @@
+onto_a	label_a	onto_b	label_b	cosine
+metpo	chemolithoautotrophic	mixs	chemolithoautotroph	0.9761
+metpo	chemoorganoheterotrophic	mixs	chemoorganoheterotroph	0.9742
+metpo	chemoautolithotrophic	mixs	chemoautolithotroph	0.9731
+metpo	photolithoautotrophic	mixs	photolithoautotroph	0.97
+metpo	lithoheterotrophic	mixs	lithoheterotroph	0.9695
+metpo	chemolithotrophic	mixs	chemolithotroph	0.9693
+metpo	lithoautotrophic	mixs	lithoautotroph	0.9676
+metpo	organoheterotrophic	mixs	organoheterotroph	0.9675
+metpo	photolithotrophic	mixs	photolithotroph	0.9672
+metpo	chemoheterotrophic	mixs	chemoheterotroph	0.9671
+metpo	photoheterotrophic	mixs	photoheterotroph	0.9652
+metpo	carboxydotrophic	mixs	carboxydotroph	0.9652
+metpo	methylotrophic	mixs	methylotroph	0.9648
+metpo	chemoautotrophic	mixs	chemoautotroph	0.964
+metpo	chemoorganotrophic	mixs	chemoorganotroph	0.9627
+metpo	heterotrophic	mixs	heterotroph	0.9625
+metpo	copiotrophic	mixs	copiotroph	0.9613
+metpo	photoautotrophic	mixs	photoautotroph	0.9606
+metpo	lithotrophic	mixs	lithotroph	0.9602
+metpo	mixotrophic	mixs	mixotroph	0.9597
+metpo	chemotrophic	mixs	chemotroph	0.9589
+metpo	methanotrophic	mixs	methanotroph	0.9578
+metpo	organotrophic	mixs	organotroph	0.9566
+metpo	oligotrophic	mixs	oligotroph	0.9538
+metpo	autotrophic	mixs	autotroph	0.9525
+metpo	phototrophic	mixs	phototroph	0.9504
+metpo	chemolithoheterotrophic	mixs	chemolithotroph	0.9137
+metpo	chemoorganoheterotrophic	mixs	chemoorganotroph	0.9132
+metpo	aerobic	mixs	aerobe	0.9118
+metpo	has estimated genome size value	mixs	estimated genome size	0.9114
+metpo	obligately aerobic	mixs	obligate aerobe	0.9098
+metpo	chemolithoheterotrophic	mixs	chemoheterotroph	0.9073
+metpo	chemoautotrophic	mixs	chemoautolithotroph	0.9065
+metpo	growth medium	mixs	plant growth medium	0.9048
+metpo	chemoorganotrophic	mixs	chemoorganoheterotroph	0.903
+metpo	lithoheterotrophic	mixs	lithotroph	0.9013
+metpo	chemoautolithotrophic	mixs	chemoautotroph	0.901
+metpo	photolithoautotrophic	mixs	photoautotroph	0.8926
+metpo	temperature range	mixs	temperature	0.8918
+metpo	lithotrophic	mixs	lithoheterotroph	0.8906
+metpo	photoautotrophic	mixs	photolithoautotroph	0.89
+metpo	aerobic	mixs	anaerobic	0.8881
+metpo	anaerobic	mixs	aerobic	0.8881
+metpo	obligately anaerobic	mixs	obligate anaerobe	0.8881
+metpo	chemolithotrophic	mixs	chemotroph	0.8841
+metpo	chemolithoautotrophic	mixs	chemoautotroph	0.8812
+metpo	obligately anaerobic	mixs	obligate aerobe	0.8758
+metpo	organotrophic	mixs	organoheterotroph	0.8749
+metpo	chemotrophic	mixs	chemoorganotroph	0.8726
+metpo	chemoorganotrophic	mixs	chemotroph	0.8709
+metpo	organoheterotrophic	mixs	organotroph	0.8709
+metpo	gliding	mixs	glider	0.8702
+metpo	chemotrophic	mixs	chemolithotroph	0.8686
+metpo	chemotrophic	mixs	chemoheterotroph	0.8681
+metpo	photolithoautotrophic	mixs	lithoautotroph	0.868
+metpo	pH range	mixs	pH	0.8673
+metpo	photoheterotrophic	mixs	photolithotroph	0.8649
+metpo	methylotrophic	mixs	methanotroph	0.8642
+metpo	photolithotrophic	mixs	photoheterotroph	0.8641
+metpo	has estimated genome size value	mixs	estimated genome size	0.8635
+metpo	chemoheterotrophic	mixs	chemotroph	0.8632
+metpo	Anaerobic respiration	mixs	anaerobic	0.8622
+metpo	phototrophic	mixs	photolithotroph	0.862
+metpo	chemoautotrophic	mixs	chemolithoautotroph	0.862
+metpo	lithoautotrophic	mixs	photolithoautotroph	0.8607
+metpo	lithotrophic	mixs	photolithotroph	0.8606
+metpo	chemolithotrophic	mixs	chemoheterotroph	0.8601
+metpo	photolithotrophic	mixs	lithotroph	0.8582
+metpo	temperature range	mixs	average temperature	0.8575
+metpo	hydrogenotrophic	mixs	heterotroph	0.857
+metpo	chemoheterotrophic	mixs	chemolithotroph	0.8563
+metpo	chemolithoautotrophic	mixs	chemolithotroph	0.8561
+metpo	chemolithoautotrophic	mixs	chemoautolithotroph	0.8549
+metpo	lithoautotrophic	mixs	lithotroph	0.8544
+metpo	methanotrophic	mixs	methylotroph	0.8532
+metpo	pH range	mixs	pH regimen	0.8522
+metpo	photolithoautotrophic	mixs	photolithotroph	0.8511
+metpo	chemolithotrophic	mixs	chemolithoautotroph	0.8509
+metpo	chemoheterotrophic	mixs	chemoorganoheterotroph	0.8506
+metpo	photoorganoheterotrophic	mixs	organoheterotroph	0.85
+metpo	chemoorganoheterotrophic	mixs	chemoheterotroph	0.8493
+metpo	phototrophic	mixs	photoheterotroph	0.8488
+metpo	photoautotrophic	mixs	autotroph	0.8479
+metpo	obligately aerobic	mixs	obligate anaerobe	0.8472
+metpo	obsolete obligate aerobe	mixs	obligate aerobe	0.8445
+mixs	taxonomic classification	aio	Classification	0.8439
+metpo	phototrophic	mixs	photoautotroph	0.8432
+metpo	autotrophic	mixs	photoautotroph	0.843
+metpo	lithotrophic	mixs	lithoautotroph	0.8425
+metpo	anaerobic	mixs	anaerobe	0.8407
+metpo	photolithotrophic	mixs	phototroph	0.8389
+metpo	chemoheterotrophic	mixs	chemoorganotroph	0.8388
+metpo	chemoorganotrophic	mixs	chemoheterotroph	0.8377
+metpo	lithoautotrophic	mixs	lithoheterotroph	0.8376
+metpo	photoorganoheterotrophic	mixs	photoheterotroph	0.8364
+metpo	chemolithotrophic	mixs	chemoorganotroph	0.8351
+metpo	obsolete oligotroph	mixs	oligotroph	0.8343
+metpo	chemoautolithotrophic	mixs	chemolithoautotroph	0.8341
+metpo	lithoheterotrophic	mixs	lithoautotroph	0.8341
+metpo	obsolete obligate anaerobe	mixs	obligate anaerobe	0.8331
+metpo	Aerobic respiration	mixs	aerobic	0.8331
+metpo	chemotrophic	mixs	chemoautotroph	0.8321
+metpo	chemolithoheterotrophic	mixs	chemolithoautotroph	0.8319
+metpo	anaerobic	mixs	aerobe	0.8287
+metpo	temperature range	mixs	air temperature	0.8281
+metpo	photoheterotrophic	mixs	phototroph	0.8271
+metpo	pH range	mixs	water pH	0.827
+metpo	photoautotrophic	mixs	phototroph	0.8267
+metpo	photoheterotrophic	mixs	heterotroph	0.8262
+metpo	obsolete obligate	mixs	obligate	0.824
+metpo	chemoorganotrophic	mixs	chemoautotroph	0.8226
+metpo	temperature range high	mixs	temperature	0.8221
+metpo	chemoorganotrophic	mixs	chemolithotroph	0.8215
+metpo	chemoautotrophic	mixs	chemoorganotroph	0.8215
+metpo	photoautotrophic	mixs	photolithotroph	0.8213
+metpo	obsolete lithoautotroph	mixs	lithoautotroph	0.821
+metpo	growth medium	mixs	spike-in growth medium	0.8196
+metpo	photolithotrophic	mixs	photolithoautotroph	0.8191
+metpo	obsolete Oligotroph	mixs	oligotroph	0.8189
+metpo	chemoheterotrophic	mixs	chemoautolithotroph	0.8183
+metpo	obsolete chemoorganoheterotroph	mixs	chemoorganoheterotroph	0.8179
+metpo	pH optimum	mixs	pH	0.8176
+metpo	oligotrophic	mixs	organotroph	0.8174
+mixs	feature prediction	aio	Representation Learning	0.8171
+metpo	chemoautotrophic	mixs	chemotroph	0.8171
+metpo	photoautotrophic	mixs	lithoautotroph	0.8163
+metpo	lithoheterotrophic	mixs	photolithotroph	0.8155
+metpo	obsolete Lithoautotroph	mixs	lithoautotroph	0.8154
+metpo	chemolithoheterotrophic	mixs	chemotroph	0.8151
+metpo	lithoautotrophic	mixs	photoautotroph	0.8147
+metpo	photoautotrophic	mixs	photoheterotroph	0.8147
+metpo	heterotrophic	mixs	photoheterotroph	0.8143
+metpo	trophic type	mixs	trophic level	0.8133
+metpo	chemotrophic	mixs	chemoorganoheterotroph	0.8131
+metpo	chemoheterotrophic	mixs	chemoautotroph	0.8125
+metpo	phenotype	mixs	host phenotype	0.8106
+metpo	lithoheterotrophic	mixs	photoheterotroph	0.8101
+metpo	chemoautotrophic	mixs	chemoheterotroph	0.809
+metpo	chemolithoheterotrophic	mixs	chemoorganoheterotroph	0.809
+metpo	obsolete organotroph	mixs	organotroph	0.8081
+metpo	nitrification	mixs	nitrate	0.8081
+metpo	obsolete chemoautotroph	mixs	chemoautotroph	0.8069
+metpo	obsolete photoautotroph	mixs	photoautotroph	0.8065
+metpo	pH range high	mixs	pH	0.8063
+metpo	microaerotolerant	mixs	microaerophilic	0.8061
+metpo	facultatively aerobic	mixs	facultative	0.8059
+metpo	photolithotrophic	mixs	photoautotroph	0.8054
+metpo	phototrophic	mixs	heterotroph	0.8048
+metpo	temperature preference	mixs	temperature	0.8046
+metpo	chemoautolithotrophic	mixs	lithoautotroph	0.8045
+metpo	chemoautolithotrophic	mixs	chemoheterotroph	0.8033
+metpo	obsolete autotroph	mixs	autotroph	0.8031
+metpo	photolithotrophic	mixs	lithoheterotroph	0.803
+metpo	chemoorganoheterotrophic	mixs	chemotroph	0.8028
+metpo	phenotype	mixs	host phenotype	0.8022
+metpo	obsolete mixotroph	mixs	mixotroph	0.8021
+metpo	temperature range low	mixs	low	0.801
+metpo	autotrophic	mixs	photolithoautotroph	0.801
+metpo	photoheterotrophic	mixs	photoautotroph	0.8009
+metpo	obsolete diazotroph	mixs	diazotroph	0.8008
+metpo	chemolithotrophic	mixs	chemoorganoheterotroph	0.8004
+metpo	obsolete sliding	mixs	sliding	0.8003

@@ -1,0 +1,127 @@
+{
+  "ontologies": [
+    {
+      "id": "metpo",
+      "preferredPrefix": "METPO",
+      "title": "Microbial Ecophysiological Trait and Phenotype Ontology (METPO)",
+      "description": "An ontology of ecophysiological traits of microbes, including preferred and tolerated growth conditions (temperature, pH, salinity, oxygen, etc.), harmonizing terminology across major trait databases (BacDive, BactoTraits, Madin bacteria_archaea_traits, MetaTraits). Developed for use in KG-Microbe.",
+      "uri": "https://w3id.org/metpo/metpo.owl",
+      "ontology_purl": "https://w3id.org/metpo/metpo.owl",
+      "base_uri": [
+        "https://w3id.org/metpo/"
+      ],
+      "homepage": "https://github.com/berkeleybop/metpo",
+      "repository": "https://github.com/berkeleybop/metpo",
+      "tracker": "https://github.com/berkeleybop/metpo/issues",
+      "creator": [
+        "Mark Andrew Miller",
+        "Marcin P. Joachimiak",
+        "Chris Mungall",
+        "Sujay Patil"
+      ],
+      "contact": {
+        "label": "Mark Andrew Miller",
+        "email": "MAM@lbl.gov",
+        "github": "turbomam",
+        "orcid": "0000-0001-9076-6066"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "is_foundary": false,
+      "reasoner": "EL",
+      "oboSlims": false,
+      "label_property": "http://www.w3.org/2000/01/rdf-schema#label",
+      "definition_property": [
+        "http://purl.obolibrary.org/obo/IAO_0000115"
+      ],
+      "synonym_property": [
+        "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+        "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
+        "http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym",
+        "http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"
+      ],
+      "preferred_root_term": [
+        "https://w3id.org/metpo/1000630",
+        "https://w3id.org/metpo/1000186",
+        "https://w3id.org/metpo/1000188"
+      ]
+    },
+    {
+      "id": "mixs",
+      "creator": [
+        "The Genomic Standards Consortium."
+      ],
+      "is_foundary": false,
+      "preferredPrefix": "MIXS",
+      "title": "Minimum Information about any (x) Sequence (MIxS) standard",
+      "uri": "https://w3id.org/mixs",
+      "description": "An OWL representation of the Minimum Information for any (x) Standard (MIxS), managed by the Genomic Standards Consortium. This file is released by the Genomic Standards Consortium (GSC; https://www.gensc.org/) for use by anyone handling data or information about biological sequences.",
+      "homepage": "https://w3id.org/mixs",
+      "mailing_list": "gensc-cig@googlegroups.com",
+      "label_property": [
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://purl.org/dc/terms/title"
+      ],
+      "base_uri": [
+        "https://w3id.org/mixs/"
+      ],
+      "reasoner": "OWL2",
+      "oboSlims": false,
+      "ontology_purl": "file:///Users/mam/gitrepos/ols4-mixs/mixs_best.owl.ttl",
+      "synonym_property": [
+        "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+        "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"
+      ],
+      "preferred_root_term": [
+        "https://w3id.org/mixs/Checklist",
+        "https://w3id.org/mixs/Extension",
+        "https://w3id.org/linkml/EnumDefinition"
+      ],
+      "tracker": "https://github.com/GenomicsStandardsConsortium/mixs/issues",
+      "repository": "https://github.com/GenomicsStandardsConsortium/mixs"
+    },
+    {
+      "id": "aio",
+      "preferredPrefix": "AIO",
+      "title": "Artificial Intelligence Ontology (AIO)",
+      "description": "The Artificial Intelligence Ontology (AIO) is a systematization of artificial intelligence concepts, methodologies, and their interrelations, spanning networks, layers, functions, large language models, preprocessing, and bias.",
+      "uri": "file:///Users/mam/gitrepos/ols4-mixs/aio_release.owl",
+      "ontology_purl": "file:///Users/mam/gitrepos/ols4-mixs/aio_release.owl",
+      "base_uri": [
+        "https://w3id.org/aio/"
+      ],
+      "homepage": "https://github.com/berkeleybop/artificial-intelligence-ontology",
+      "repository": "https://github.com/berkeleybop/artificial-intelligence-ontology",
+      "tracker": "https://github.com/berkeleybop/artificial-intelligence-ontology/issues",
+      "contact": {
+        "label": "Mark Andrew Miller",
+        "email": "MAM@lbl.gov",
+        "github": "turbomam",
+        "orcid": "0000-0001-9076-6066"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "is_foundary": false,
+      "reasoner": "EL",
+      "oboSlims": false,
+      "label_property": "http://www.w3.org/2000/01/rdf-schema#label",
+      "definition_property": [
+        "http://purl.obolibrary.org/obo/IAO_0000115"
+      ],
+      "synonym_property": [
+        "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+        "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
+        "http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym",
+        "http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"
+      ],
+      "preferred_root_term": [
+        "https://w3id.org/aio/Bias",
+        "https://w3id.org/aio/Layer",
+        "https://w3id.org/aio/MachineLearningTask",
+        "https://w3id.org/aio/MathematicalFunction",
+        "https://w3id.org/aio/Model",
+        "https://w3id.org/aio/Network",
+        "https://w3id.org/aio/Preprocessing",
+        "https://w3id.org/aio/TrainingStrategy"
+      ]
+    }
+  ]
+}

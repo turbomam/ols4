@@ -1,0 +1,5 @@
+# regenerable artifacts (large / derived); keep README, ollama_embed.py, cross_ontology_similarity.tsv
+ols_emb_bgem3.parquet
+terms_2col.tsv
+terms_onto.tsv
+terms_iri.tsv
